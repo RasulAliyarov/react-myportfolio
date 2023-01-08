@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,700;1,700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+html {
+}
+
+body {
+    position: relative;
+    background-color: black;
+    overflow-x: hidden;
+}
+
+.loader {
+    position: absolute;
+    width: 100% !important;
+    height: 100vh !important;
+
+    span {
+        position: absolute !important;
+        top: 45% !important;
+        left: 45% !important;
+    }
+}
+
+.home {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+
+    &::after {
+        content: '';
+        width: 100%;
+        height: 100vmin;
+        background-size: cover;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: black;
+        opacity: .4;
+        z-index: 1;
+    }
+
+    &__video {
+        width: 100%;
+        object-fit: cover;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        height: 100vmin;
+
+        video {
+            width: 100%;
+            object-fit: fill;
+        }
+    }
+
+    &__content {
+        width: fit-content;
+        text-align: center;
+        color: white;
+        z-index: 10;
+        width: 600px;
+        padding: 12% 0 30px;
+
+        &__title {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            .apostroph {
+                color: #07a804;
+            }
+
+            .line {
+                width: 20%;
+                margin: 18px 0;
+                height: 2px;
+                border-radius: 10px;
+                background-color: white;
+            }
+
+            h2 {
+                font-family: 'Philosopher', sans-serif;
+                padding: 10px 15px;
+                width: 100%;
+                font-size: 2rem;
+                border-top: 1px solid white;
+                border-bottom: 1px solid white;
+                color: white;
+            }
+
+            h1 {
+                font-family: 'Philosopher', sans-serif;
+                letter-spacing: 1px;
+                font-size: 4rem;
+                margin: 15px 0 0;
+                width: 102%;
+            }
+
+            p {
+                width: 80%;
+                font-family: 'Roboto', sans-serif;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 22px;
+                letter-spacing: 2px;
+            }
+
+            button {
+                margin-top: 30px;
+                border: none;
+                cursor: pointer;
+                padding: 15px 55px;
+                border-radius: 10px;
+                font-size: 16px;
+                font-weight: 600;
+                box-shadow: 0 0 0 0 rgba(#7e7e7e, .5);
+                transition: .4s;
+                display: flex;
+                align-items: center;
+                color: white;
+                background-color: #07a804;
+
+                svg {
+                    margin-right: 5px;
+                    width: 20px;
+                    height: 20px;
+                }
+            }
+        }
+    }
+}
+
+@media(max-width: 692px) {
+    html {
+        font-size: 9px;
+    }
+
+    body {
+        background-color: black;
+
+    }
+
+    .home {
+        padding-top: 30px;
+        padding-bottom: 30px;
+        height: fit-content;
+        background: url(https://images.unsplash.com/photo-1616004675303-ae5657c14af7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80);
+        width: 100%;
+        background-size: cover;
+        &:after{
+            height: 100%;
+        }
+        &__video {
+            display: none;
+        }
+
+        &__content {
+            width: 100%;
+            padding-top: 0;
+            height: 100vh;
+            &__title {
+                h2 {
+                    width: 75%;
+                }
+
+                h1 {
+                    width: fit-content;
+                }
+            }
+
+            button {
+                padding: 10px 45px;
+                margin-top: 20px;
+            }
+        }
+    }
+}
+
+@media(max-width:353px) {
+    .home {
+
+        &__content {
+            &__title {
+
+                h1 {
+                    font-size: 3.5rem;
+                }
+            }
+        }
+    }
+}
+
+.pulsate-fwd {
+    -webkit-animation: pulsate-fwd .6s ease-in-out infinite both;
+    animation: pulsate-fwd .6s ease-in-out infinite both;
+}
+
+@-webkit-keyframes pulsate-fwd {
+    0% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+
+    50% {
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+    }
+
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+}
+
+@keyframes pulsate-fwd {
+    0% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        box-shadow: 0 0 0 30pxrgba(#7e7e7e, 1);
+
+    }
+
+    50% {
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+    }
+
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        box-shadow: 0 0 0 30px rgba(#7e7e7e, 0);
+
+    }
+}

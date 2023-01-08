@@ -1,0 +1,618 @@
+@import url('https://fonts.googleapis.com/css2?family=Londrina+Outline&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;500;600;700;800;900&display=swap');
+// font-family: 'Fira Sans', sans-serif;
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&display=swap');
+// font-family: 'Josefin Sans', sans-serif;
+
+
+.about {
+    margin: 60px 0;
+
+    &__wrapper {
+        &__top {
+            display: flex;
+            align-items: center;
+            height: 500px;
+            flex-wrap: wrap;
+            padding-bottom: 120px;
+
+            &__left {
+                width: 65%;
+                z-index: 2;
+
+                &__top {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+
+                    &__text {
+                        color: white;
+                        font-family: 'Josefin Sans', sans-serif;
+                        font-size: 3rem;
+
+                        .secondName {
+                            font-size: 5.2rem;
+                            margin-top: 20px;
+                        }
+
+                        h5 {
+                            color: #07A804;
+                            font-size: 2rem;
+                        }
+                    }
+
+                    &__images {
+                        position: relative;
+                        div {
+                            width: 320px;
+                            height: 240px;
+                            background-color: rgb(185, 185, 185);
+                            position: absolute;
+                            border-radius: 8px;
+                            top: -40px;
+                            right: -40px;
+                            z-index: -1;
+                        }
+
+                        img {
+                            border-radius: 8px;
+                            width: 350px;
+                            z-index: 1;
+                        }
+                    }
+
+                }
+
+                &__bottom {
+                    text-align: center;
+                    margin-top: 30px;
+                    display: flex;
+                    justify-content: center;
+                    flex-direction: column;
+
+                    .line {
+                        width: 15%;
+                        height: 4px;
+                        margin-bottom: 10px;
+                        background-color: #07A804;
+                        margin: 15px auto;
+                        border-radius: 10px;
+                    }
+
+                    p {
+                        margin: 10px auto;
+                        color: white;
+                        width: 600px;
+                        font-family: 'Roboto', sans-serif;
+                        font-weight: 300;
+                        line-height: 22px;
+                        letter-spacing: 2px;
+                    }
+                }
+            }
+
+            &__right {
+                z-index: 1;
+                width: 35%;
+
+                img {
+                    width: 100%;
+                    float: right;
+                }
+            }
+        }
+
+        &__bottom {
+            padding: 15px 0;
+            height: 100vh;
+
+            &__skills {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+
+                li {
+                    display: flex;
+                    flex-direction: column;
+                    color: white;
+                    margin-bottom: 20px;
+
+                    img {
+                        padding-bottom: 2px;
+                        width: 40px;
+                        height: 40px;
+
+                        animation: round 3s ease-out infinite;
+
+                        @keyframes round {
+
+                            0%,
+                            100% {
+                                transform: translateY(0);
+                            }
+
+                            50% {
+                                transform: translateY(-10px);
+                            }
+
+                        }
+                    }
+                }
+            }
+
+            input {
+                &[type="range"] {
+                    -webkit-appearance: none;
+                    margin-right: 15px;
+                    width: 300px;
+                    height: 7px;
+                    background: rgba(255, 255, 255, 0.6);
+                    border-radius: 5px;
+                    background-image: linear-gradient(#fffb00, #fffb00);
+                    background-size: 70% 100%;
+                    background-repeat: no-repeat;
+                }
+
+                &[type="range"]::-webkit-slider-thumb {
+                    -webkit-appearance: none;
+                    height: 20px;
+                    width: 20px;
+                    border-radius: 50%;
+                    background: white;
+                    cursor: ew-resize;
+                    box-shadow: 0 0 2px 0 #555;
+                    transition: background .3s ease-in-out;
+                    display: none;
+                }
+
+                &[type=range]::-webkit-slider-runnable-track {
+                    -webkit-appearance: none;
+                    box-shadow: none;
+                    border: none;
+                    background: transparent;
+                }
+            }
+
+            #skill1 {
+                &[type="range"] {
+                    background-size: 60% 100%;
+                }
+            }
+
+            #skill2 {
+                &[type="range"] {
+                    background-size: 80% 100%;
+                }
+            }
+
+            #skill3 {
+                &[type="range"] {
+                    background-size: 95% 100%;
+                }
+            }
+
+            #skill4 {
+                &[type="range"] {
+                    background-size: 100% 100%;
+                }
+            }
+
+            #skill5 {
+                &[type="range"] {
+                    background-size: 100% 100%;
+                }
+            }
+
+            #skill6 {
+                &[type="range"] {
+                    background-size: 85% 100%;
+                }
+            }
+
+            #skill7 {
+                &[type="range"] {
+                    background-size: 95% 100%;
+                }
+            }
+
+            #skill8 {
+                &[type="range"] {
+                    background-size: 75% 100%;
+                }
+            }
+
+            #skill9 {
+                &[type="range"] {
+                    background-size: 90% 100%;
+                }
+            }
+
+            #skill10 {
+                &[type="range"] {
+                    background-size: 100% 100%;
+                }
+            }
+
+            #skill11 {
+                &[type="range"] {
+                    background-size: 40% 100%;
+                }
+            }
+
+            &__EduAndExp {
+                margin-top: 60px;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+
+                ul {
+                    list-style: none;
+
+                    li {
+                        width: 100%;
+                        position: relative;
+                        color: white;
+                        padding-left: 30px;
+                        font-family: 'Josefin Sans', sans-serif;
+                        padding: 3px 0 30px 50px;
+                        margin-bottom: 20px;
+
+                        span {
+                            display: flex;
+                            font-family: 'IBM Plex Mono', monospace;
+                            align-items: center;
+                            font-size: 14px;
+
+                            i {
+                                font-size: 16px;
+                                margin-right: 10px;
+                            }
+                        }
+
+                        h3 {
+                            display: flex;
+                            margin: 20px 0;
+
+                            span {
+                                font-family: 'Josefin Sans', sans-serif;
+                                margin-left: 10px;
+                                font-size: 18px;
+                            }
+
+                        }
+
+                        &::before {
+                            content: "";
+                            height: 129px;
+                            width: 1px;
+                            background-color: #07A804;
+                            position: absolute;
+                            top: 19px;
+                            left: 9px;
+                        }
+
+                        &::after {
+                            content: "";
+                            height: 15px;
+                            width: 15px;
+                            border: 2px solid #07A804;
+                            position: absolute;
+                            border-radius: 50%;
+                            top: 0;
+                            left: 0;
+
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media(max-width:992px) {
+    .about {
+        &__wrapper {
+            &__top {
+                background: url(../../../public/img/background/sideImg2.jpg);
+                width: 100%;
+                background-size: cover;
+                background-position: center;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                &__left {
+
+                    &__top {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center !important;
+
+                        &__text {
+                            color: white;
+                            font-family: 'IBM Plex Mono', monospace;
+                            display: flex;
+                            flex-direction: column;
+                            padding: 0;
+                            margin-bottom: 70px;
+
+                            span {
+                                display: flex;
+
+                                h1 {
+                                    font-size: 72px;
+                                }
+
+                                .secondName {
+                                    font-size: 72px;
+                                    margin: 0;
+                                    margin-left: 25px;
+                                }
+                            }
+
+                            h5 {
+                                text-align: center;
+                                color: #07A804;
+                                background-color: white;
+                                width: fit-content;
+                                padding: 0 10px;
+                                margin: 15px auto;
+                            }
+                        }
+                    }
+
+                    &__bottom {
+                        .line {
+                            background-color: white;
+                            margin: 5px auto;
+                        }
+
+                        p {
+                            width: 100%;
+                        }
+                    }
+                }
+
+                &__right {
+                    width: 100%;
+
+                    img {
+                        float: none;
+                        display: none;
+                    }
+                }
+            }
+
+            &__bottom {
+                .section-title_label {
+                    margin-top: 50px;
+                }
+
+                &__EduAndExp {
+                    ul {
+                        list-style: none;
+
+                        li {
+
+                            &::before {
+                                content: "";
+                                height: 129px;
+                                width: 1px;
+                                background-color: #07A804;
+                                position: absolute;
+                                top: 19px;
+                                left: 9px;
+                            }
+
+                            &::after {
+                                content: "";
+                                height: 15px;
+                                width: 15px;
+                                border: 2px solid #07A804;
+                                position: absolute;
+                                border-radius: 50%;
+                                top: 0;
+                                left: 0;
+
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media(max-width: 785px) {
+    .about {
+        &__wrapper {
+            &__top {
+                &__left {
+                    margin-top: 30px;
+
+                    &__top {
+                        &__text {
+                            span {
+
+                                h1,
+                                .secondName {
+
+                                    font-size: 4.6rem;
+                                }
+                            }
+                        }
+                    }
+
+                    &__bottom {
+                        p {
+                            font-size: 1.2rem;
+                            // font-weight: 600;
+                        }
+                    }
+                }
+            }
+
+            &__bottom {
+                &__skills {
+                    width: 100%;
+
+                    li {
+                        width: 100%;
+                    }
+
+                    input {
+                        width: 100%;
+
+                        &[type="range"] {
+                            -webkit-appearance: none;
+                            margin-right: 15px;
+                            height: 7px;
+                            width: 100%;
+                            background: rgba(255, 255, 255, 0.6);
+                            border-radius: 5px;
+                            background-image: linear-gradient(#fffb00, #fffb00);
+                            background-size: 70% 100%;
+                            background-repeat: no-repeat;
+                        }
+
+                        &[type="range"]::-webkit-slider-thumb {
+                            -webkit-appearance: none;
+                            height: 20px;
+                            width: 20px;
+                            border-radius: 50%;
+                            background: white;
+                            cursor: ew-resize;
+                            box-shadow: 0 0 2px 0 #555;
+                            transition: background .3s ease-in-out;
+                            display: none;
+                        }
+
+                        &[type=range]::-webkit-slider-runnable-track {
+                            -webkit-appearance: none;
+                            box-shadow: none;
+                            border: none;
+                            background: transparent;
+                        }
+
+
+                    }
+                }
+
+                &__EduAndExp {
+                    display: flex;
+                    flex-direction: column !important;
+
+                    ul {
+
+                        li {
+                            margin-bottom: 0;
+
+                            h3 {
+                                font-size: 18px;
+                            }
+
+                            P {
+                                font-size: 14px;
+                            }
+
+                            &::before {
+                                height: 110px !important;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media(max-width: 470px) {
+    .about {
+        &__wrapper {
+            &__top {
+                &__left {
+                    margin-top: 30px;
+
+                    &__top {
+                        &__text {
+                            span {
+
+                                h1,
+                                .secondName {
+
+                                    font-size: 80%;
+                                }
+
+                                .secondName {
+                                    margin-left: 5px;
+                                }
+                            }
+                        }
+
+                        &__images {
+                            .box {
+                                width: 100%;
+                                height: 100%;
+
+                            }
+
+                            img {
+                                width: 105%;
+                            }
+                        }
+                    }
+
+                    &__bottom {
+                        p {
+                            font-size: 1.2rem;
+                            font-weight: 600;
+                        }
+                    }
+                }
+            }
+
+            &__bottom {
+                &__skills {
+                    width: 100%;
+
+                    ul {
+
+                        li {
+                            width: 100%;
+                        }
+                    }
+                }
+
+                &__EduAndExp {
+                    ul {
+
+                        li {
+                            margin-bottom: 0;
+
+                            h3 {
+                                font-size: 18px;
+                            }
+
+                            P {
+                                font-size: 14px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.section-title_label {
+    text-transform: uppercase;
+    font-size: 14px;
+    font-family: 'Fira Sans', sans-serif;
+    ;
+    letter-spacing: 0.25em;
+    color: #d4d4d4;
+    margin-bottom: 40px;
+}

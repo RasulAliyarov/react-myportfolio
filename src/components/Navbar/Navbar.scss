@@ -1,0 +1,207 @@
+html {
+    ::-webkit-scrollbar {
+        display: none;
+    }
+
+    ::-webkit-scrollbar-track {
+        display: none;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        display: none;
+    }
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.header {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    background: none;
+    background: transparent;
+
+    &__left {
+        z-index: 5;
+        .logo {
+            color: white;
+            img{
+                transition: .4s;
+                width: 45px;
+            }
+            &:hover {
+                img {
+                    transform: scale(1.1);
+                    transition: .4s;
+                }
+            }
+        }
+    }
+
+    &__right {
+        display: flex;
+
+        a {
+            font-family: 'IBM Plex Mono', monospace;
+            color: white;
+            font-size: 16px;
+            letter-spacing: 2px;
+            margin: 0 0 0 30px;
+            z-index: 5;
+            transition: .4s;
+
+            span {
+                display: flex;
+                align-items: center;
+                svg {
+                    padding-right: 5px;
+                }
+            }
+
+            &:after,
+            &:before {
+                backface-visibility: hidden;
+                height: 1px;
+                background-color: white;
+                bottom: -5px;
+                content: " ";
+                display: block;
+                margin: 0 auto;
+                transition: all 280ms ease-in-out;
+                width: 0;
+            }
+
+            &:hover:after,
+            &:hover:before {
+                backface-visibility: hidden;
+                transition: width 350ms ease-in-out;
+                width: 100%;
+            }
+
+            &:hover:before {
+                top: -5px;
+                width: 100%;
+            }
+
+            &:first-child {
+                padding-left: 0;
+            }
+        }
+
+        .burger {
+            display: none;
+            border: none;
+            background-color: transparent;
+            cursor: pointer;
+            z-index: 5;
+
+            svg {
+                width: 30px;
+                color: white;
+                height: 30px;
+            }
+        }
+    }
+    .respNavbar {
+        overflow: scroll;
+        width: 70%;
+        height: 100vh;
+        position: fixed;
+        right: 0;
+        top: 0;
+        background-color: rgb(255, 255, 255);
+        z-index: 99;
+        transform: translateX(100%);
+        transition: .4s;
+        &__top {
+            padding: 20px;
+            border-bottom: 1px solid rgb(204, 204, 204);
+            display: flex;
+            align-items: center;
+            
+            button {
+                border: 0;
+                background-color: transparent;
+                padding-bottom: 20px;
+                cursor: pointer;
+                svg {
+                    width: 25px;
+                    height: 25px;
+                    position: absolute;
+                    color: black;
+                    right: 10px;
+                }
+            }
+        }
+
+        &__content {
+            display: flex;
+            flex-direction: column;
+
+            a {
+                padding: 25px 12px;
+                border-bottom: 1px solid rgb(204, 204, 204);
+                color: black;
+
+                span {
+                    display: flex;
+                    justify-content: space-between;
+                    font-size: 18px;
+                    flex-direction: row-reverse;
+                    font-family: "Roboto", sans-serif;
+                    font-weight: 600;
+                }
+            }
+        }
+    }
+    .respNavActive{
+        transform: translateX(0);
+        transition: .4s;
+    }
+}
+
+.activeTab {
+
+    &:after,
+    &:before {
+        bottom: -5px !important;
+        content: " ";
+        display: block !important;
+        margin: 0 auto !important;
+        transition: all 280ms ease-in-out !important;
+        width: 110% !important;
+    }
+
+    &:after,
+    &:before {
+        transition: width 350ms ease-in-out !important;
+        width: 100% !important;
+
+    }
+
+    &:before {
+        top: -5px !important;
+        width: 100% !important;
+    }
+}
+
+@media(max-width: 692px) {
+    .header {
+        padding: 30px 0;
+
+        &__right {
+            a {
+                display: none;
+            }
+
+            .burger {
+                display: block;
+            }
+        }
+    }
+}
