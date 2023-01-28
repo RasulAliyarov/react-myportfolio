@@ -5,8 +5,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&display=swap');
-// font-family: 'Josefin Sans', sans-serif;
 
+// font-family: 'Josefin Sans', sans-serif;
+.container1200 {
+    width: 1200px;
+    margin: 0 auto;
+}
 
 .about {
     margin: 60px 0;
@@ -46,10 +50,11 @@
 
                     &__images {
                         position: relative;
+
                         div {
                             width: 320px;
                             height: 240px;
-                            background-color: rgb(185, 185, 185);
+                            background-color: rgb(229 229 229 / 60%);
                             position: absolute;
                             border-radius: 8px;
                             top: -40px;
@@ -314,7 +319,7 @@
 
 @media(max-width:992px) {
     .about {
-        &__wrapper {
+        &__wrapper { 
             &__top {
                 background: url(../../../public/img/background/sideImg2.jpg);
                 width: 100%;
@@ -323,7 +328,7 @@
                 display: flex;
                 justify-content: center;
                 align-items: center;
-
+                
                 &__left {
 
                     &__top {
@@ -387,6 +392,8 @@
             }
 
             &__bottom {
+                width: 80%;
+                margin: 0 auto;
                 .section-title_label {
                     margin-top: 50px;
                 }

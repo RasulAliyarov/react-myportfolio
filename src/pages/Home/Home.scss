@@ -11,8 +11,7 @@
     margin: 0 auto;
 }
 
-html {
-}
+html {}
 
 body {
     position: relative;
@@ -94,7 +93,7 @@ body {
             }
 
             h2 {
-                font-family: 'Philosopher', sans-serif;
+                font-family: 'Josefin Sans', sans-serif;
                 padding: 10px 15px;
                 width: 100%;
                 font-size: 2rem;
@@ -104,11 +103,11 @@ body {
             }
 
             h1 {
-                font-family: 'Philosopher', sans-serif;
+                font-family: 'Josefin Sans', sans-serif;
                 letter-spacing: 1px;
                 font-size: 4rem;
                 margin: 15px 0 0;
-                width: 102%;
+                width: max-content;
             }
 
             p {
@@ -162,9 +161,11 @@ body {
         background: url(https://images.unsplash.com/photo-1616004675303-ae5657c14af7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80);
         width: 100%;
         background-size: cover;
-        &:after{
+
+        &:after {
             height: 100%;
         }
+
         &__video {
             display: none;
         }
@@ -173,6 +174,7 @@ body {
             width: 100%;
             padding-top: 0;
             height: 100vh;
+
             &__title {
                 h2 {
                     width: 75%;

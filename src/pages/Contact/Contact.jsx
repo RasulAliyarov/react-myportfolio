@@ -1,5 +1,4 @@
 import React, { useRef } from 'react'
-import contact from "../../assets/img/contacts.mp4"
 import ContactStyle from "./Contact.scss"
 import { GiHamburgerMenu } from 'react-icons/gi';
 import { HiMail } from 'react-icons/hi';

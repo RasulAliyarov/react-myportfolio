@@ -1,7 +1,6 @@
 import React from 'react'
 import HomeStyle from "./Home.scss"
 import BackgroundVideo from "../../assets/img/keyboard_stock_preview.mp4"
-import Preloader from "../../assets/img/preloader.gif"
 import { AiOutlineDownload } from 'react-icons/ai';
 import { Helmet } from "react-helmet";
 import { motion } from 'framer-motion'
@@ -47,7 +46,7 @@ function Home() {
                             }
                         </h1>
                         <div className='line'></div>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit ullam suscipit fugit consequatur quos explicabo esse voluptatem eum minima ut.</p>
+                        <p>I strives to build immersive and beautiful web applications through carefully crafted code and user-centric design.</p>
                         <a href="https://drive.google.com/uc?export=download&id=1D4z-HQwPcE03Dh5Nf6Czapch2OsLTAAK"> <button className='pulsate-fwd'><AiOutlineDownload />CV</button></a>
                     </div>
                     <div className='home__content__image'>
