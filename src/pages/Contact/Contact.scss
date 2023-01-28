@@ -311,6 +311,14 @@ body {
                         span{
                             transform: translateY(-10px);
                         }
+                        &:hover {
+                            color: white;
+    
+                            span {
+                                transition: 0.4s ease-in;
+                                transform: translateY(-125%);
+                            }
+                        }
                     }
                 }
             }
