@@ -48,8 +48,6 @@ body {
                         margin-bottom: 10px;
                     }
 
-                    label {}
-
                     input,
                     textarea {
                         border: none;
@@ -73,7 +71,6 @@ body {
                         margin: 0;
                     }
 
-                    /* Firefox */
                     input[type=number] {
                         -moz-appearance: textfield;
                     }
@@ -146,7 +143,6 @@ body {
 
                     &::before {
                         bottom: 60px;
-
                     }
 
                     &:hover:before {
@@ -210,13 +206,11 @@ body {
                             transform: rotatey(359deg);
                             transition: .4s;
                             color: white;
-
                         }
 
                         div {
                             background-color: #07A804;
                         }
-
                         transition: .4s;
                     }
                 }
@@ -254,15 +248,7 @@ body {
                         div {
                             width: 50%;
                         }
-
-                        label {}
-
-                        input {}
                     }
-
-                    .messageBox {}
-
-                    button {}
                 }
             }
 
@@ -318,17 +304,12 @@ body {
                         div {
                             width: 100%;
                         }
-
-                        label {}
-
-                        input {}
                     }
 
-                    .messageBox {}
-
                     button {
-
                         padding: 10px 30px;
+                        span{
+                        }
                     }
                 }
             }
