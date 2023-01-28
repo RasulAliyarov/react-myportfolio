@@ -35,8 +35,9 @@ function Home() {
                             />
                         </i></h2>
                         <h1 className='wordflick'>
+
                             {
-                                <Typewriter
+                                < Typewriter
                                     onInit={(typewriter) => {
                                         typewriter
                                             .typeString("I'am web developer")
