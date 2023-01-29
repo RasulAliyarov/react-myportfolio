@@ -19,15 +19,13 @@ body {
     overflow-x: hidden;
 }
 
-.loader {
-    position: absolute;
-    width: 100% !important;
+.loaderBg {
+    display: flex;
     height: 100vh !important;
-
-    span {
-        position: absolute !important;
-        top: 45% !important;
-        left: 45% !important;
+    align-items: center;
+    justify-content: center !important;
+    .loader {
+        span {}
     }
 }
 
