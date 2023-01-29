@@ -31,10 +31,10 @@ function Navbar() {
             <button className='burger' onClick={() => setActiveBurger(false)} ><AiOutlineClose /></button>
           </div>
           <div className="respNavbar__content" >
-            <Link to="/"><span><AiFillHome /> Home</span></Link>
-            <Link to="/portfolio"><span>< HiShoppingBag />Portfolio</span></Link>
-            <Link to="/contact"><span><AiFillMessage /> Contact</span></Link>
-            <Link to="/about"><span><HiUser />About</span></Link>
+            <NavLink className={({ isActive }) => isActive ? 'activeTabResp' : ''} to="/"><span><AiFillHome /> Home</span></NavLink>
+            <NavLink className={({ isActive }) => isActive ? 'activeTabResp' : ''} to="/portfolio"><span>< HiShoppingBag />Portfolio</span></NavLink>
+            <NavLink className={({ isActive }) => isActive ? 'activeTabResp' : ''} to="/contact"><span><AiFillMessage /> Contact</span></NavLink>
+            <NavLink className={({ isActive }) => isActive ? 'activeTabResp' : ''} to="/about"><span><HiUser />About</span></NavLink>
           </div>
         </div>
         <Toaster
