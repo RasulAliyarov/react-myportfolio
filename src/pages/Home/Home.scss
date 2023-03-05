@@ -190,7 +190,56 @@ body {
         }
     }
 }
+.btn {
+    border: none;
+    display: block;
+    text-align: center;
+    cursor: pointer;
+    text-transform: uppercase;
+    outline: none;
+    overflow: hidden;
+    position: relative;
+    color: #fff;
+    font-weight: 700;
+    font-size: 15px;
+    background-color: #cb11ab;
+    padding: 10px 50px;
+    margin: 0 auto;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 10px;
+    margin-top: 10px;
+    font-size: 12px !important;
 
+    &::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 490%;
+        width: 140%;
+        background: #4A1173;
+        -webkit-transition: all .5s ease-in-out;
+        transition: all .5s ease-in-out;
+        -webkit-transform: translateX(-110%) translateY(-25%) rotate(45deg);
+        transform: translateX(-110%) translateY(-25%) rotate(45deg);
+    }
+
+    &:hover {
+        transform: scale(1.1);
+        &::after {
+            -webkit-transform: translateX(-5%) translateY(-25%) rotate(45deg);
+            transform: translateX(-5%) translateY(-25%) rotate(45deg);
+        }
+    }
+
+    .btnName {
+        position: relative;
+        z-index: 1;
+        display: flex;
+        align-items: center;
+    }
+
+}
 @media(max-width:353px) {
     .home {
 
@@ -205,45 +254,3 @@ body {
     }
 }
 
-.pulsate-fwd {
-    -webkit-animation: pulsate-fwd .6s ease-in-out infinite both;
-    animation: pulsate-fwd .6s ease-in-out infinite both;
-}
-
-@-webkit-keyframes pulsate-fwd {
-    0% {
-        -webkit-transform: scale(1);
-        transform: scale(1);
-    }
-
-    50% {
-        -webkit-transform: scale(1.1);
-        transform: scale(1.1);
-    }
-
-    100% {
-        -webkit-transform: scale(1);
-        transform: scale(1);
-    }
-}
-
-@keyframes pulsate-fwd {
-    0% {
-        -webkit-transform: scale(1);
-        transform: scale(1);
-        box-shadow: 0 0 0 30pxrgba(#7e7e7e, 1);
-
-    }
-
-    50% {
-        -webkit-transform: scale(1.1);
-        transform: scale(1.1);
-    }
-
-    100% {
-        -webkit-transform: scale(1);
-        transform: scale(1);
-        box-shadow: 0 0 0 30px rgba(#7e7e7e, 0);
-
-    }
-}

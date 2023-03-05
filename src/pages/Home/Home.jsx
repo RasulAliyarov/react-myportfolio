@@ -1,5 +1,5 @@
 import React from 'react'
-import HomeStyle from "./Home.scss"
+import "./Home.scss"
 import BackgroundVideo from "../../assets/img/keyboard_stock_preview.mp4"
 import { AiOutlineDownload } from 'react-icons/ai';
 import { Helmet } from "react-helmet";
@@ -48,7 +48,14 @@ function Home() {
                         </h1>
                         <div className='line'></div>
                         <p>I strives to build immersive and beautiful web applications through carefully crafted code and user-centric design.</p>
-                        <a href="https://drive.google.com/uc?export=download&id=1D4z-HQwPcE03Dh5Nf6Czapch2OsLTAAK"> <button className='pulsate-fwd'><AiOutlineDownload />CV</button></a>
+                        <a href="https://drive.google.com/uc?export=download&id=17i6drAkk77jbL-HgCfaIExK9-u-innTC">
+                            <button className='pulsate-fwd btn'>
+                                <span className='btnName'>
+                                    <AiOutlineDownload />
+                                    CV
+                                </span>
+                            </button>
+                        </a>
                     </div>
                     <div className='home__content__image'>
 
@@ -60,3 +67,4 @@ function Home() {
 }
 
 export default Home
+
