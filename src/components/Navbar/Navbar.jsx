@@ -1,9 +1,8 @@
-import React, { useEffect, useRef, useState } from 'react'
-import { Link, useLocation, NavLink } from 'react-router-dom'
-import NavbarStyle from "./Navbar.scss"
-import Logo from "../../assets/img/codelogo.png"
+import React, { useState } from 'react'
+import { NavLink } from 'react-router-dom'
+import "./Navbar.scss"
 import { GiHamburgerMenu } from 'react-icons/gi';
-import { HiCode, HiShoppingBag, HiUser } from 'react-icons/hi';
+import { HiShoppingBag, HiUser } from 'react-icons/hi';
 import { AiFillHome, AiFillMessage, AiOutlineClose } from 'react-icons/ai';
 import { Toaster } from 'react-hot-toast';
 
@@ -31,10 +30,10 @@ function Navbar() {
             <button className='burger' onClick={() => setActiveBurger(false)} ><AiOutlineClose /></button>
           </div>
           <div className="respNavbar__content" >
-            <NavLink className={({ isActive }) => isActive ? 'activeTabResp' : ''} to="/"><span><AiFillHome /> Home</span></NavLink>
-            <NavLink className={({ isActive }) => isActive ? 'activeTabResp' : ''} to="/portfolio"><span>< HiShoppingBag />Portfolio</span></NavLink>
-            <NavLink className={({ isActive }) => isActive ? 'activeTabResp' : ''} to="/contact"><span><AiFillMessage /> Contact</span></NavLink>
-            <NavLink className={({ isActive }) => isActive ? 'activeTabResp' : ''} to="/about"><span><HiUser />About</span></NavLink>
+            <NavLink className={({ isActive }) => isActive ? 'activeTabResp' : ''} to="/" onClick={() => setActiveBurger(false)}><span><AiFillHome /> Home</span></NavLink>
+            <NavLink className={({ isActive }) => isActive ? 'activeTabResp' : ''} to="/portfolio" onClick={() => setActiveBurger(false)}><span>< HiShoppingBag />Portfolio</span></NavLink>
+            <NavLink className={({ isActive }) => isActive ? 'activeTabResp' : ''} to="/contact" onClick={() => setActiveBurger(false)}><span><AiFillMessage /> Contact</span></NavLink>
+            <NavLink className={({ isActive }) => isActive ? 'activeTabResp' : ''} to="/about" onClick={() => setActiveBurger(false)}><span><HiUser />About</span></NavLink>
           </div>
         </div>
         <Toaster

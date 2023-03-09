@@ -40,7 +40,7 @@ function Home() {
                                 < Typewriter
                                     onInit={(typewriter) => {
                                         typewriter
-                                            .typeString("I'am web developer")
+                                            .typeString("I'am Web Developer")
                                             .start();
                                     }}
                                 />
@@ -48,7 +48,7 @@ function Home() {
                         </h1>
                         <div className='line'></div>
                         <p>I strives to build immersive and beautiful web applications through carefully crafted code and user-centric design.</p>
-                        <a href="https://drive.google.com/uc?export=download&id=17i6drAkk77jbL-HgCfaIExK9-u-innTC">
+                        <a href="https://drive.google.com/uc?export=download&id=1gDPd2WUQenuaqjZpetuqyPyfRYGoDrjB">
                             <button className='pulsate-fwd btn'>
                                 <span className='btnName'>
                                     <AiOutlineDownload />

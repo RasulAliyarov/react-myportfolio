@@ -1,6 +1,5 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
-import AboutStyle from "./About.scss"
+import "./About.scss"
 import { Helmet } from "react-helmet";
 import { motion } from 'framer-motion'
 import Data from "../../data"
@@ -30,7 +29,7 @@ function About() {
                                 </div>
                                 <div className="about__wrapper__top__left__top__images">
                                     <div className='box bounce-in-top '></div>
-                                    <img className='bounce-in-top ' src="https://autoimage.capitalone.com/cms/Auto/assets/images/1611-hero-should-you-transfer-a-car-loan-to-another-person.jpg" alt="" />
+                                    <img className='bounce-in-top ' src="img/Rasul2.jpg" alt="" />
                                 </div>
                             </div>
                             <div className="about__wrapper__top__left__bottom">
