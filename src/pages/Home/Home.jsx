@@ -48,7 +48,7 @@ function Home() {
                         </h1>
                         <div className='line'></div>
                         <p>I strives to build immersive and beautiful web applications through carefully crafted code and user-centric design.</p>
-                        <a href="https://drive.google.com/uc?export=download&id=1gDPd2WUQenuaqjZpetuqyPyfRYGoDrjB">
+                        <a href="https://drive.google.com/uc?export=download&id=182bU8KDkON6MTZAn3JF1YQczTKVww4V6">
                             <button className='pulsate-fwd btn'>
                                 <span className='btnName'>
                                     <AiOutlineDownload />

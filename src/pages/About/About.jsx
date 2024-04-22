@@ -68,14 +68,24 @@ function About() {
                                     - Experience
                                 </p>
                                 <li>
-                                    <span> <i><FaRegCalendarAlt /></i> 04.05.2021 - 01.07.2021</span>
-                                    <h3>Front-end <span> Proton</span></h3>
-                                    <p>2 months internship</p>
+                                    <span> <i><FaRegCalendarAlt /></i> 15.02.2024 - 15.05.2024 </span>
+                                    <h3>Network Monitoring <span></span></h3>
+                                    <p>Azerconnect LLC</p>
                                 </li>
                                 <li>
-                                    <span> <i><FaRegCalendarAlt /></i> 2021 - 2022</span>
-                                    <h3>Manager <span> Vape Shop</span></h3>
-                                    <p>-</p>
+                                    <span> <i><FaRegCalendarAlt /></i> 2023 - </span>
+                                    <h3>Fullstack developer<span></span></h3>
+                                    <p>Make Agency</p>
+                                </li>
+                                <li>
+                                    <span> <i><FaRegCalendarAlt /></i> 01.04.2023 - 01.06.2023</span>
+                                    <h3>Backend Intern<span></span></h3>
+                                    <p>Make Agency</p>
+                                </li>
+                                <li>
+                                    <span> <i><FaRegCalendarAlt /></i> 04.05.2021 - 01.07.2021</span>
+                                    <h3>Front-end Intern<span>  </span></h3>
+                                    <p>Proton</p>
                                 </li>
 
                             </ul>
